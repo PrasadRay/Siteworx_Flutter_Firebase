@@ -7,9 +7,11 @@ import 'package:noteapp/providers/language_provider.dart';
 import 'package:noteapp/providers/theme_provider.dart';
 import 'package:noteapp/services/firestore_database.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  FirebaseApp app = await Firebase.initializeApp();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((_) async {
     runApp(

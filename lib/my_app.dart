@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
                   //List of all supported locales
                   supportedLocales: [
                     Locale('en', 'US'),
-                    Locale('zh', 'CN'),
+                    //Locale('zh', 'CN'),
                   ],
                   //These delegates make sure that the localization data for the proper language is loaded
                   localizationsDelegates: [
